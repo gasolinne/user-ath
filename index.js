@@ -23,7 +23,7 @@ connectDB();
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://dashwtptal.pages.dev/",
+    "https://wptalhmpg.pages.dev/",
 
     // "https://nextstrive-admin.pages.dev",
     // "https://symphonious-licorice-adfc01.netlify.app",
