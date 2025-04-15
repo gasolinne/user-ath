@@ -9,6 +9,7 @@ const userRoutes = require("./src/routes/userRoutes.js");
 const everythingReferral = require("./src/routes/everythingReferral");
 const forgotPassword = require("./src/routes/forgotPassword");
 
+
 // admin
 const everythingInvestment = require("./src/routes/su/everythingInvestment.js");
 const userInvestment = require("./src/routes/userInvestments.js");
@@ -22,13 +23,15 @@ connectDB();
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://nextstrive-admin.pages.dev",
+    "https://dashboard-wealthpitl.pages.dev/",
+    
+    // "https://nextstrive-admin.pages.dev",
     // "https://symphonious-licorice-adfc01.netlify.app",
     // "https://dash-nextstrive.vercel.app",
-    "https://nextstrive.online",
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "http://localhost:5500",
+    // "https://nextstrive.online",
+    // "http://localhost:3000",
+    // "http://localhost:3001",
+    // "http://localhost:5500",
     "http://127.0.0.1:5500",
     "http://127.0.0.1:5501",
   ],
