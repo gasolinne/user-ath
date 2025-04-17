@@ -22,7 +22,7 @@ const mw_verify_session = async (req, res, next) => {
     let userExists = await userModel
       .findById(data._id)
       .select(
-        "full_name email username btc_add eth_add usdt_add lite_add perfect secret_question secret_answer upline date last_login ip_address browser_change ad_balance"
+        "full_name email pendingDeposit username btc_add eth_add usdt_add lite_add perfect secret_question secret_answer upline date last_login ip_address browser_change ad_balance"
       );
     if (!userExists) throw new Error("invalid user in session");
     // if account is suspended then stop the action
