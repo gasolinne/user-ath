@@ -101,7 +101,7 @@ router.put(
       await getTrans.save();
       await User.updateOne({_id: getTrans?.uid.toString()}, {
         $inc: {
-          pendingDeposit: -amount
+          pendingDeposit: -getTrans.amount
         }
       });
 
