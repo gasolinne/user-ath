@@ -99,7 +99,7 @@ router.put(
 
       // Save the updated transaction
       await getTrans.save();
-      await User.updateOne({_id: req.user._id}, {
+      await User.updateOne({_id: getTrans?.uid.toString()}, {
         $inc: {
           pendingDeposit: -amount
         }
