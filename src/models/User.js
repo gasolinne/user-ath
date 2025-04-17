@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema(
     phone: String,
     totalEarned: {type: Number, default: 0},
     totalWithdrew: {type: Number, default: 0},
+    pendingDeposit: {type: Number, default: 0},
     ip_address: {
       type: String,
       enum: ["disabled", "medium", "high", "paranoic"],

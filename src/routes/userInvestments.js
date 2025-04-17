@@ -154,6 +154,17 @@ router.post(
         ],
       });
 
+      // update user to have pending deposit 
+      // await 
+      // await 
+      // await 
+      // await 
+      await User.updateOne({_id: req.user._id}, {
+        $inc: {
+          pendingDeposit: amount
+        }
+      });
+
       res.json({
         data: savedata,
         e: false,

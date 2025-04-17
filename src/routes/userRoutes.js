@@ -143,6 +143,7 @@ router.post("/auth/login", mw_convertPayload2Lowercase, async (req, res) => {
   }
 });
 
+
 // get user information
 router.get("/get/details", verifySession, async (req, res) => {
   try {
