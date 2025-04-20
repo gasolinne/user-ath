@@ -22,11 +22,11 @@ connectDB();
 
 const corsOptions = {
   origin: [
-    "http://localhost:5173",
-    "http://localhost:5174",
     "https://official-honepage-wealthpital.pages.dev/",
     "https://user-dashboard-wealthpital.pages.dev/",
     "https://secure-adminn-wealthpital.pages.dev/",
+    "http://localhost:5173",
+    "http://localhost:5174",
 
     // "https://nextstrive-admin.pages.dev",
     // "https://symphonious-licorice-adfc01.netlify.app",
@@ -41,6 +41,8 @@ const corsOptions = {
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
   allowedHeaders: ["Content-Type", "Authorization"],
 };
+
+// kdkfkfkffkfk
 
 const app = express();
 
