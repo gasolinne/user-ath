@@ -27,6 +27,7 @@ const corsOptions = {
     "https://secure-adminn-wealthpital.pages.dev/",
     "http://localhost:5173",
     "http://localhost:5174",
+    "https://admidashal.pages.dev/",
 
     // "https://nextstrive-admin.pages.dev",
     // "https://symphonious-licorice-adfc01.netlify.app",
