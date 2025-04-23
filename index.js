@@ -26,6 +26,7 @@ const corsOptions = {
     "http://localhost:5174",
     
     "https://abcdhomepage.pages.dev/",
+    "https://efghdashboard.pages.dev/",
     // "https://nextstrive-admin.pages.dev",
     // "https://symphonious-licorice-adfc01.netlify.app",
     // "https://dash-nextstrive.vercel.app",
