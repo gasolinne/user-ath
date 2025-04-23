@@ -22,13 +22,10 @@ connectDB();
 
 const corsOptions = {
   origin: [
-    "https://official-honepage-wealthpital.pages.dev/",
-    "https://user-dashboard-wealthpital.pages.dev/",
-    "https://secure-adminn-wealthpital.pages.dev/",
     "http://localhost:5173",
     "http://localhost:5174",
-    "https://admidashal.pages.dev/",
-
+    
+    "https://abcdhomepage.pages.dev/",
     // "https://nextstrive-admin.pages.dev",
     // "https://symphonious-licorice-adfc01.netlify.app",
     // "https://dash-nextstrive.vercel.app",
