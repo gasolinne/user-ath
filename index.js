@@ -31,8 +31,6 @@ const corsOptions = {
     // "https://nextstrive-admin.pages.dev",
     // "https://symphonious-licorice-adfc01.netlify.app",
     // "https://dash-nextstrive.vercel.app",
-    // "https://nextstrive.online",
-    // "http://localhost:3000",
     // "http://localhost:3001",
     // "http://localhost:5500",
     "http://127.0.0.1:5500",
