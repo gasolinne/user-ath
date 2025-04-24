@@ -8,6 +8,9 @@ const userSchema = new mongoose.Schema(
     phone: String,
     totalEarned: {type: Number, default: 0},
     totalWithdrew: {type: Number, default: 0},
+    account_balance: {type: Number, default: 0},
+    withdrawal: {type: Number, default: 0},
+    earned_balance: {type: Number, default: 0},
     pendingDeposit: {type: Number, default: 0},
     ip_address: {
       type: String,

@@ -187,6 +187,43 @@ router.put(
 
 
 
+// edit each user HERE! earns withdrawal & balance
+router.put("/edit/user/:id", verifyAdminSession, async (req, res) => {
+  try {
+    const findUser = await User.findById(req.params.id).select("_id");
+
+    if (!findUser) {
+      // console.log("deleted old picture here! ");
+      res.status(500).json({
+        e: true,
+        m: "Unable to complete request, can't find user with ID",
+      });
+      return;
+    }
+
+    // const deleteKYC = await transactionsModel.deleteMany({ uid: findUser._id });
+
+    await User.findByIdAndUpdate(findUser._id, {
+      account_balance: req.body.account_balance,
+      withdrawal: req.body.withdrawal,
+      earned_balance: req.body.earned_balance,
+    }, {new: true});
+
+    res.status(200).json({
+      e: false,
+      m: "Success!",
+    });
+  } catch (error) {
+    res.status(500).json({
+      e: true,
+      m: error.message || "unable to complete request",
+    });
+
+    console.log("error =>> ", error);
+  }
+});
+
+
 
 // delete each user HERE! with there kyc, wallet, and phrase
 router.delete("/user/:id", verifyAdminSession, async (req, res) => {
@@ -204,7 +241,7 @@ router.delete("/user/:id", verifyAdminSession, async (req, res) => {
 
     const deleteKYC = await transactionsModel.deleteMany({ uid: findUser._id });
 
-    await userModel.findByIdAndDelete(findUser._id);
+    await User.findByIdAndDelete(findUser._id);
 
     res.status(200).json({
       e: false,
