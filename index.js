@@ -24,6 +24,10 @@ const corsOptions = {
   origin: [
     "http://localhost:5173",
     "http://localhost:5174",
+
+    "https://wealthpital.com/",
+    "https://dash.wealthpital.com/",
+    "https://administrator.wealthpital.com/",
     
     "https://abcdhomepage.pages.dev",
     "https://efghdashboard.pages.dev",
